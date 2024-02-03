@@ -10,7 +10,7 @@ return require("packer").startup(function(use)
   -- Aspect
   use "rebelot/kanagawa.nvim"
   use "folke/tokyonight.nvim"
-  use "nvim-tree/nvim-web-devicons" 
+  use "nvim-tree/nvim-web-devicons"
 
   -- Treesitter
   use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
@@ -24,9 +24,9 @@ return require("packer").startup(function(use)
     requires = { {
 	    "nvim-lua/plenary.nvim"
     } }
-  } 
+  }
 
-  -- LSP
+  -- LSP and Debugger support
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v1.x',
@@ -40,7 +40,6 @@ return require("packer").startup(function(use)
 		  {'hrsh7th/nvim-cmp'},
 		  {'hrsh7th/cmp-buffer'},
 		  {'hrsh7th/cmp-path'},
-		  {'saadparwaiz1/cmp_luasnip'},
 		  {'hrsh7th/cmp-nvim-lsp'},
 		  {'hrsh7th/cmp-nvim-lua'},
 
@@ -49,7 +48,7 @@ return require("packer").startup(function(use)
 		  {'rafamadriz/friendly-snippets'},
 	  }
   }
-
+  use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"}}
 
   -- Misc
   use "theprimeagen/harpoon"

@@ -24,8 +24,8 @@ vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
 -- Quoted as "The worst place in the universe" (?)
 vim.keymap.set("n", "Q", "<nop>")
-vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
+vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
 -- Quick-fix navigation
 vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
@@ -43,4 +43,3 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
-
