@@ -1,3 +1,1 @@
-# Legacy configuration using Packer
-
-Replaced with Lazyvim
+# Second try, using Packer
